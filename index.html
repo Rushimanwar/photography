@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RushiPhotography</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,14 +16,16 @@
                         RushiPhotography
                     </h3>
                 </div>
-                <nav>
+                <nav id="show">
                     <ol class="flex">
                         <li><a href="index.html" class="active"> Home</a></li>
-                        <li><a href="about.html"> About</a></li>
+                        <li><a href="about.html"> About Us</a></li>
                         <li><a href="team.html"> Teams</a></li>
-                        <li><a href="contact.html"> Contact</a></li>
+                        <li><a href="contact.html"> Contact Us</a></li>
                     </ol>
                 </nav>
+                
+            <span1 onclick="l1()" id="l1"></span1><span2 onclick="l2()" id="l2"></span2>
                 </div>
             </header>   
             <div class="mid">
@@ -73,7 +75,7 @@
                     <div class="foot-1">
                         <h1>RushiPhotography</h1>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium accusamus sed odit. Quibusdam veniam inventore architecto reiciendis dignissimos corrupti impedit!
+                            &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium accusamus sed odit. Quibusdam veniam inventore architecto reiciendis dignissimos corrupti impedit!
                         </p>
 
                     </div>
@@ -88,19 +90,68 @@
                     </div>
                     <div class="foot-3">
                         <h1>contact</h1>
-                        <h3>E-mail: forexample@gmail.com</h3>
-                        <h4>Phone: +91 987 654 1234</h4>
+                        <h3><i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19.771" height="16" viewBox="0 0 89.771 56">
+                              <g id="Rectangle_1" data-name="Rectangle 1" fill="#fff" stroke="#fff" stroke-width="1">
+                                <rect width="89" height="56" stroke="none"/>
+                                <rect x="0.5" y="0.5" width="88" height="55" fill="none"/>
+                              </g>
+                              <line id="Line_1" data-name="Line 1" x1="45" y1="29" transform="translate(0.5 0.5)" fill="none" stroke="#111" stroke-width="2"/>
+                              <line id="Line_2" data-name="Line 2" y1="29" x2="45" transform="translate(44.5 0.5)" fill="none" stroke="#111" stroke-width="2"/>
+                              <line id="Line_3" data-name="Line 3" y1="37" x2="27" transform="translate(0.5 18.5)" fill="none" stroke="#111" stroke-width="2"/>
+                              <line id="Line_4" data-name="Line 4" x1="27" y1="37" transform="translate(61.5 18.5)" fill="none" stroke="#111" stroke-width="2"/>
+                            </svg>
+                            </i>E-mail: forexample@gmail.com</h3>
+                        <h4><i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 60 85">
+                              <g id="Rectangle_2" data-name="Rectangle 2" fill="#fff" stroke="#111" stroke-width="2">
+                                <rect width="60" height="85" stroke="none"/>
+                                <rect x="0.5" y="0.5" width="59" height="84" fill="none"/>
+                              </g>
+                              <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(20 60)" fill="#111" stroke="#111" stroke-width="2">
+                                <circle cx="10" cy="10" r="10" stroke="none"/>
+                                <circle cx="10" cy="10" r="9.5" fill="none"/>
+                              </g>
+                            </svg></i>Phone: +91 987 654 1234</h4>
                     </div>
                 </div>
             </footer>
             <div class="footer-2">
                 <div class="container">
                     <h6>
-                        RushiPhotography @ All rights reserved.
+                        RushiPhotography 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 -15 60 87">
+                          <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(0 19)" fill="#333" stroke="#fff" stroke-width="5">
+                            <circle cx="30" cy="30" r="30" stroke="none"/>
+                            <circle cx="30" cy="30" r="27.5" fill="none"/>
+                          </g>
+                          <text id="c" transform="translate(10 67)" fill="#fff" font-size="50" font-family="YuGothic-Bold, Yu Gothic" font-weight="700"><tspan x="0" y="0">c</tspan></text>
+                        </svg> All rights reserved.
                     </h6>
                 </div>
             </div>
 
     </div>
+    <script>
+        function l1(){
+
+            var s = document.getElementById('show');
+            var a = document.getElementById('l1');
+            var b = document.getElementById('l2');
+            s.style.display="block";
+            a.style.display="none";
+            b.style.display="block";
+        }
+
+        function l2(){
+            var s = document.getElementById('show');
+            var a = document.getElementById('l1');
+            var b = document.getElementById('l2');
+            s.style.display="none";
+            a.style.display="block";
+            b.style.display="none";
+        }
+    </script>
+
 </body>
 </html>
